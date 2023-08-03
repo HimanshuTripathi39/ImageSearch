@@ -40,12 +40,12 @@ async function searchImages() {
   }
 }
 
-formEl.addEventListener("submit", () => {
+formEl.addEventListener("submit", (event) => {
   event.preventDefault();
   page = 1;
   searchImages();
 });
-
+ 
 showMore.addEventListener("click", () => {
   searchImages();
 });
